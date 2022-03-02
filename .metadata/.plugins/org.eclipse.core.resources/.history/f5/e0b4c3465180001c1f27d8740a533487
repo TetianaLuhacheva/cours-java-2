@@ -1,0 +1,76 @@
+package fr.boxe.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import fr.boxe.model.Combattant;
+
+public class DaoCombattant {
+
+	// Entity manager
+	EntityManagerFactory emf = Persistence.createEntityManagerFactory("BoxePersistence");
+	EntityManager em = emf.createEntityManager();
+
+
+//	Niveau n4 = new Niveau();
+//	n4.setCode("n4");
+//	n4.setDescription("Niveau 4");
+//	
+//	em.getTransaction().begin();
+//	em.persist(n4);
+//	em.getTransaction().commit();
+//	
+//	Out.w("Succes!");	
+//	
+//	
+//	List<Niveau> niveaux = em.createQuery("SELECT o FROM o").getResultList();
+//	for(Niveau n:niveaux) {
+//		System.out.println("Descripyion "); 
+//	}
+	
+	
+	/*
+	 * CRUD
+	 */
+	
+	// create 
+	public void creerCombattant(Combattant combt) {	
+		System.out.println("+-------------------------------+");
+		System.out.println("|   Creetion du Combattant      |");
+		System.out.println("+-------------------------------+");
+		
+		try {
+			Combattant comb = new Combattant();
+			comb.setCombattant(combt);
+			
+			em.getTransaction().begin();
+			em.persist(combt);
+			em.getTransaction().commit();
+			
+			System.out.println("Creation avec succes !");				
+			 
+		} catch (Exception e) { 
+			e.printStackTrace();
+		}
+
+	}
+	
+	
+	// read
+	public static void readCombattant() {		
+		
+	}
+	
+	// update
+	public static void updateCombattant() {
+		
+	}
+	
+	// delete
+	public static void deleteCombattant() {
+		
+	}
+}

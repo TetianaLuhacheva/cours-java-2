@@ -1,0 +1,8 @@
+package fr.boxe.dao;
+
+public class DaoMatch {
+	// enetiey manager
+	EntityManagerFactory emf = Persistence.createEntityManagerFactory("BoxePersistence");
+	EntityManager em = emf.createEntityManager();
+	
+}

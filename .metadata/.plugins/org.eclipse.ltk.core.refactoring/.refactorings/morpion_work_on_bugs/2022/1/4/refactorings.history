@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Out.java&apos; to &apos;bd_1/src/fr.tetiana.bd_1&apos;&#x0D;&#x0A;- Original project: &apos;morpion_work_on_bugs&apos;&#x0D;&#x0A;- Destination element: &apos;bd_1/src/fr.tetiana.bd_1&apos;&#x0D;&#x0A;- Original element: &apos;fr.tetiana.morpion.Out.java&apos;" description="Copy compilation unit" destination="=bd_1/src&lt;fr.tetiana.bd_1" element1="/src&lt;fr.tetiana.morpion{Out.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1643286884073" units="1" version="1.0"/>
+</session>

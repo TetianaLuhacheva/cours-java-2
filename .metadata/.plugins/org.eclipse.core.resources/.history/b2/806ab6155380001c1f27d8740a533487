@@ -1,0 +1,41 @@
+package fr.box.run;
+
+public class Menu {
+
+	public Menu() {
+//		-	saisir les combattants, de lister tous les combattants, de supprimer un combattant, de modifier un combattant avec la méthode « merge ». 
+//		NB : pour utiliser la méthode  merge et remove  «d’entityManager », il faut au préalable utiliser la méthode find pour mettre l’entité dans le contexte JPA.
+//		-	saisir, modifier, supprimer, lister  un stade,
+//		-	de saisir un match qui doit opposer deux combattants, de le supprimer, lister tous les matchs.
+
+		Out.w("+-------------------------------+");
+		Out.w("|   Creetion du Combattant      |");
+		Out.w("+-------------------------------+");
+		
+		Out.w("");
+		Out.w("");
+		
+		boolean choixFini = true;
+		int choix = Out.rInt();
+	
+		
+		while(choixFini) {
+			
+			switch(choix) {
+			
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+				
+			default :
+				break;			
+			}
+			
+		}
+	}
+
+
+}

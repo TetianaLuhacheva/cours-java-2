@@ -1,0 +1,5 @@
+package fr.boxe.dao;
+
+public class DaoMatch {
+
+}

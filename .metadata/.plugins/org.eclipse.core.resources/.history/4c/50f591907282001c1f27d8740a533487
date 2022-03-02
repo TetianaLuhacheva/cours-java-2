@@ -1,0 +1,48 @@
+package fr.boxe.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import fr.boxe.model.Combattant;
+import fr.boxe.model.Stade;
+
+public class DaoStade {
+
+	protected EntityManager em = null;
+	
+	public DaoStade() {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("BoxePersistence");
+		EntityManager em = emf.createEntityManager();
+	}
+	
+	/*
+	 * CRUD
+	 */
+	
+	// create 
+	public Stade creerStade(Stade entity) {	 
+		em.getTransaction().begin();
+		em.persist(entity);
+		em.getTransaction().commit();
+		
+		return entity;			
+		  
+	}
+	
+	
+	// read
+	public static void readStade() {		
+		
+	}
+	
+	// update
+	public static void updateStade() {
+		
+	}
+	
+	// delete
+	public static void deleteMatch() {
+		
+	}
+}

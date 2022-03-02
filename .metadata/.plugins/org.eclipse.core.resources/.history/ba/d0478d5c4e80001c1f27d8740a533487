@@ -1,0 +1,49 @@
+package fr.boxe.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import fr.boxe.model.Combattant;
+
+public class DaoMatch { 
+	EntityManagerFactory emf = Persistence.createEntityManagerFactory("BoxePersistence");
+	EntityManager em = emf.createEntityManager();
+	
+
+	/*
+	 * CRUD
+	 */
+	
+	// create 
+	public void creerCombattant(Combattant combt) {		 
+		try {
+			em.getTransaction().begin();
+			em.persist(combt);
+			em.getTransaction().commit();
+			
+			System.out.println("Creation avec succes !");				
+			 
+		} catch (Exception e) { 
+			e.printStackTrace();
+		}
+
+	}
+	
+	
+	// read
+	public static void readCombattant() {		
+		
+	}
+	
+	// update
+	public static void updateCombattant() {
+		
+	}
+	
+	// delete
+	public static void deleteCombattant() {
+		
+	}
+	
+}

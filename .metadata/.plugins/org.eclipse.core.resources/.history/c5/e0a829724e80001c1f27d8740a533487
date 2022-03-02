@@ -1,0 +1,42 @@
+package fr.boxe.dao;
+
+import fr.boxe.model.Combattant;
+
+public class DaoStade {
+
+
+	/*
+	 * CRUD
+	 */
+	
+	// create 
+	public void creerMatch(Combattant combt) {		 
+		try {
+			em.getTransaction().begin();
+			em.persist(combt);
+			em.getTransaction().commit();
+			
+			System.out.println("Creation avec succes !");				
+			 
+		} catch (Exception e) { 
+			e.printStackTrace();
+		}
+
+	}
+	
+	
+	// read
+	public static void readMatch() {		
+		
+	}
+	
+	// update
+	public static void updateMatch() {
+		
+	}
+	
+	// delete
+	public static void deleteMatch() {
+		
+	}
+}

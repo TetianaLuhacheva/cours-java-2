@@ -1,0 +1,43 @@
+package fr.teti_philliance.manageFichier;
+
+import java.util.Enumeration;
+import java.util.Hashtable;
+import java.util.Dictionary;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//Partie 1
+		System.out.println("Remembr:\n");
+		
+		System.out.println("// nom demain (pour example com\\fr)");
+		System.out.println("// qui appertient le projet (moi\\entrprise)");
+		System.out.println("// nom du projet");
+		
+		// Partie 2
+		 String[] joursSemaine = {"lundi", "mardi", "mercredi", "jeudi", 
+                 "vendredi", "samedi", "dimanche"};
+		 String[] joursSemaine = {"lundi", "mardi", "mercredi", "jeudi", 
+                 "vendredi", "samedi", "dimanche"};
+		 String[] daysOfWeek = {"sunday", "monday", "tuesday", "wednesday", 
+               "thursday", "friday", "saturday"};
+		 Dictionary dictionnaire = new Hashtable();
+		 for(int i = 0; i < joursSemaine.length; i++){
+			 dictionnaire.put(daysOfWeek[i < joursSemaine.length - 1 ? i+1 : 0], joursSemaine[i]);
+		 }
+		 
+		System.out.println("Taille du dictionnaire : " + dictionnaire.size());
+		int i = 1;
+		Enumeration valeurs = dictionnaire.elements();
+		Enumeration cles = dictionnaire.keys();
+		while(valeurs.hasMoreElements() && cles.hasMoreElements()){
+		System.out.println(i++ + " entrée : " + valeurs.nextElement() 
+		         + " -> " + dictionnaire.remove(cles.nextElement()));
+		}
+		System.out.println("Taille du dictionnaire : " + dictionnaire.size());
+	
+			
+	}
+
+}

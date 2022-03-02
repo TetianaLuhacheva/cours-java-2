@@ -1,0 +1,45 @@
+package fr.teti_philliance.manageFichier;
+
+// DICTIONNAIRE BASIC
+
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {		
+		 
+		// Variables et Commainaires
+		
+		// type: string
+		String premierChose = "CamelCase";
+		
+		// type: int
+		System.out.println(0);
+		
+
+		// type: boolean
+		System.out.println(true); 
+		//System.out.println(true, false);
+		
+		 //List \ Tableau
+	    String[] caracteristiques = new String[]{"sansible a la casse", "strict","explicite"};
+	    System.out.println(caracteristiques);
+	    
+	    String[] autres = {"sansible a la casse", "strict","explicite"};
+	    System.out.println(autres);
+		
+		
+		// Dictonnaire
+		Dictionary<Integer, String> nomerRegles = new Hashtable<Integer, String>();
+		
+		nomerRegles.put(1, "// nom demain (pour example com\\\\fr)");
+		nomerRegles.put(2, "\"// qui appertient le projet (moi\\\\entrprise)\"");
+		nomerRegles.put(3, "\"// nom du projet\\"); 
+
+	    System.out.println(nomerRegles);
+		
+	 
+	    
+	}
+
+}

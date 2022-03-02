@@ -1,0 +1,29 @@
+package fr.box.run;
+
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import fr.boxe.model.Stade;
+import fr.boxe.service.ServiceStade;
+import fr.boxe.ui.MainFrame;
+
+public class Main {
+
+	public static void main(String[] args) {	
+				
+		//new Menu();
+		//new MainFrame();
+	
+		ServiceStade serviceStade = new ServiceStade();
+		Stade stade = new Stade();
+		
+		stade.setCodeStade("001");
+		
+		
+	}
+
+}
